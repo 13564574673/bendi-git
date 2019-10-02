@@ -1,6 +1,5 @@
 body{
     background:black;
-    color:white;
     margin: 0;
 }
 a{
@@ -25,10 +24,10 @@ a{
       格式：上 右 下 左
     */
     padding: 20px 0px 20px 0px;
-    position: fixed;
+    position: fixed;/*背景图包含导航栏和log*/
     top: 0;
     left: 0;
-    width: 100%;
+    width: 100%;/*不到万不得已不要写宽度100%，高度也是*/
 }
 .topNavBar-inner{
     padding: 0px 16px 0px 16px;
@@ -78,5 +77,41 @@ a{
 .banner{
     height: 515px;
     background-image:url(./img/BeiJingTu.jpg);
-    border:1px solid red;
+    background-position: center center; /*图片居中*/
+    /*background-size: cover; 图片自适应*/
+}
+.banner .mask{
+    height: 515px;
+    background-color: rgba(0, 0, 0, 0.5)
+    /*背景遮罩*/
+}
+.userCard{
+    border: 1px solid red;
+    max-width: 940px;/*设置最大宽度，可以自适应*/
+    margin-left:auto;
+    margin-right: auto;/*div居中设置*/ 
+    background-color: #ffffff;
+}
+.userCard .welcome{
+    background:#E6686A;
+    color: white;
+    display: inline-block;/*内联元素不接受宽高，要使用display改变元素*/
+    padding: 4px 16px;
+    /* width: 70px; */
+    /* height: 29px; */
+    line-height: 22px;
+    /* text-align: center; */
+    position: relative; 
+    /*解决hello三角形问题：绝对定位--在父元素写position: relative*/
+}
+.userCard .welcome .triangle{
+    display: block;/*默认span改变成div*/
+    border:10px solid transparent;
+    width: 0px;
+    border-left-color: #E6686A;
+    border-top-width: 0px;
+    position: absolute; 
+    /*解决hello三角形问题：绝对定位--在子元素写position: absolute*/
+    left: 4px;
+    top: 100%;
 }

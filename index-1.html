@@ -6,7 +6,8 @@
 	</head>
 	<body>
 		<div class="topNavBar">
-			<div class="topNavBar-inner clearfix">
+			<div class="topNavBar-inner clearfix"> 
+				<!--新增一个div topNavBar-inner 解决log 导航栏样式错误问题-->
 				<a class="logo" href="#" alt="logo" style="float: left;">
 						<span class="rs">RS</span>
 						<span class="card">card</span>
@@ -38,36 +39,39 @@
 				</nav>				
 			</div>
 		</div>
-		<div class="banner" style=""></div>
+		<div class="banner">
+			<div class="mask">
+
+			</div>
+		</div>
 		<!--div高度 由其内部文档流元素的高度总和决定的 
 			文档流：文档内元素的流动方向
 			内联元素：从左往右流动，如果遇到宽度不够，就另起一行继续流动
 			块级元素：每一个块都占一行，所有的块从上往下依次流动
 			word-break:break-all 单词打断
 		-->
-		
 		<main>
-			<div class="card">
+			<div class="userCard">
 				<div class="picture">
-						<img src="" alt="头像">
+						<img src="./img/avatar.jpg" width=299 height=347 alt="头像">
 				</div>
 				<div class="text">
-					<div class="profile">
-						<span class="welcome">Hello</span>
-						<h1>马立</h1>
-						<p>前端开发工程师</p>
-						<hr>
-						<dl> 
-							<dt>年龄</dt>
-							<dd>18</dd>
-							<dt>所在城市</dt>
-							<dd>上海</dd>
-							<dt>邮箱</dt>
-							<dd>mali.enyang@foxmail.com</dd>
-							<dt>手机</dt>
-							<dd>13564574673</dd>
-						</dl>
-					</div>
+					<span class="welcome">Hello
+						<span class="triangle"></span>
+					</span>
+					<h1>马立</h1>
+					<p>前端开发工程师</p>
+					<hr>
+					<dl> 
+						<dt>年龄</dt>
+						<dd>18</dd>
+						<dt>所在城市</dt>
+						<dd>上海</dd>
+						<dt>邮箱</dt>
+						<dd>mali.enyang@foxmail.com</dd>
+						<dt>手机</dt>
+						<dd>13564574673</dd>
+					</dl>
 					<footer class="media">
 						<a href="#"><img src="#" alt="..."></a>
 						<a href="#"><img src="#" alt="..."></a>
