@@ -8,6 +8,15 @@ a{
     text-decoration: none;
     /*去除下划线*/
 }
+*{
+    margin: 0;
+    padding: 0;
+}
+hr{
+    height: 0;
+    border:none;
+    border-top:1px solid #DEDEDE;
+}
 .clearfix::after{
     content: '';
     display: block;
@@ -86,7 +95,7 @@ a{
     /*背景遮罩*/
 }
 .userCard{
-    border: 1px solid red;
+    /* border: 1px solid red; */
     max-width: 940px;/*设置最大宽度，可以自适应*/
     margin-left:auto;
     margin-right: auto;/*div居中设置*/ 
@@ -103,6 +112,7 @@ a{
     /* text-align: center; */
     position: relative; 
     /*解决hello三角形问题：绝对定位--在父元素写position: relative*/
+    margin-bottom: 10px;
 }
 .userCard .welcome .triangle{
     display: block;/*默认span改变成div*/
@@ -114,4 +124,68 @@ a{
     /*解决hello三角形问题：绝对定位--在子元素写position: absolute*/
     left: 4px;
     top: 100%;
+    /*在谷歌可以输入css tricks shape 用来查找css画的各种形状代码*/
+}
+.userCard .picture{
+    float: left;
+    margin-right: 65px;
+}
+.userCard .text{
+    float: left;
+    /* margin-left: 65px; */
+    width: 475px;
+
+}
+.userCard .text h1{
+    margin-top:18px;
+}
+.userCard .text hr{
+    margin:20px 0;
+}
+.userCard .pictureAndText{
+    padding: 50px;
+}
+.userCard dl dt,.userCard dl dd{
+    float: left;
+    /* width: 50%; */
+    padding: 5px 0;
+}
+.userCard dl dt{
+    width: 30%;
+    font-weight: bold; /*字体 加粗*/
+}
+.userCard dl dd{
+    width: 70%;
+    color: #9da0a7; 
+}
+.userCard .tubiao > footer.media{
+    background: #E6686A;
+    text-align: center;
+}
+.userCard .tubiao > footer.media > a{
+    /* border: 1px solid black; */
+    display: inline-block; /*完全包住标签*/
+    width: 40px;
+    line-height: 30px;
+    padding: 5px 0;
+    border-radius: 50%; /*标签方形变圆*/ 
+    margin: 16px;
+}
+.userCard .tubiao > footer.media > a:hover{
+    /*hover 背景色*/
+    background: #CF5D5F;
+}
+/* .userCard svg{
+    width: 30px;
+    height: 30px;
+    fill: white;
+    margin: 0 16px;
+    vertical-align: top;
+} */
+.userCard .tubiao img{
+    width: 30px;
+    height: 30px;
+    /* fill: white; */
+    /* margin: 0 16px; */
+    vertical-align: top;
 }

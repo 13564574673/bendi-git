@@ -1,8 +1,17 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>我的网页</title>
+		<title>我的个人简历</title>
 		<link rel="stylesheet" href="./b.css">
+		<!-- <script src="//at.alicdn.com/t/font_1443564_5x8owupc0b5.js"></script>
+		<style type="text/css">
+			.icon {
+			   width: 1em; height: 1em;
+			   vertical-align: -0.15em;
+			   fill: currentColor;
+			   overflow: hidden;
+			}
+		</style> -->
 	</head>
 	<body>
 		<div class="topNavBar">
@@ -41,7 +50,6 @@
 		</div>
 		<div class="banner">
 			<div class="mask">
-
 			</div>
 		</div>
 		<!--div高度 由其内部文档流元素的高度总和决定的 
@@ -52,36 +60,64 @@
 		-->
 		<main>
 			<div class="userCard">
-				<div class="picture">
+				<div class="pictureAndText clearfix">
+					<div class="picture">
 						<img src="./img/avatar.jpg" width=299 height=347 alt="头像">
+					</div>
+					<div class="text">
+						<span class="welcome">Hello
+							<span class="triangle"></span>
+						</span>
+						<h1>马立</h1>
+						<p>前端开发工程师</p>
+						<hr>
+						<dl> 
+							<dt>年龄</dt>
+							<dd>18</dd>
+							<dt>所在城市</dt>
+							<dd>上海</dd>
+							<dt>邮箱</dt>
+							<dd>mali.enyang@foxmail.com</dd>
+							<dt>手机</dt>
+							<dd>13564574673</dd>
+						</dl>
+					</div>
 				</div>
-				<div class="text">
-					<span class="welcome">Hello
-						<span class="triangle"></span>
-					</span>
-					<h1>马立</h1>
-					<p>前端开发工程师</p>
-					<hr>
-					<dl> 
-						<dt>年龄</dt>
-						<dd>18</dd>
-						<dt>所在城市</dt>
-						<dd>上海</dd>
-						<dt>邮箱</dt>
-						<dd>mali.enyang@foxmail.com</dd>
-						<dt>手机</dt>
-						<dd>13564574673</dd>
-					</dl>
+				<div class="tubiao">
 					<footer class="media">
-						<a href="#"><img src="#" alt="..."></a>
-						<a href="#"><img src="#" alt="..."></a>
-						<a href="#"><img src="#" alt="..."></a>
-						<a href="#"><img src="#" alt="..."></a>
-						<a href="#"><img src="#" alt="..."></a>
-						<a href="#"><img src="#" alt="..."></a>
-						<a href="#"><img src="#" alt="..."></a>
+						<a href="#">
+							<!-- <svg class="icon" aria-hidden="true">
+									<use xlink:href="#icon-jianshu"></use>
+								</svg> -->
+							<img src="./img/简书.png" alt="...">
+						</a>
+						<a href="#">
+							<!-- <svg class="icon" aria-hidden="true">
+								<use xlink:href="#icon-git"></use>
+							</svg> -->
+							<img src="./img/github.png" alt="...">
+						</a>
+						<a href="#">
+							<!-- <svg class="icon" aria-hidden="true">
+								<use xlink:href="#icon-weibo1"></use>
+							</svg> -->
+							<img src="./img/微博.png" alt="...">
+						</a>
+						<a href="#">
+							<!-- <svg class="icon" aria-hidden="true">
+								<use xlink:href="#icon-jirengulogojichu"></use>
+							</svg> -->
+							<img src="./img/推特.png" alt="...">
+						</a>
+						<a href="#">
+							<!-- <svg class="icon" aria-hidden="true">
+								<use xlink:href="#icon-tuite"></use>
+							</svg> -->
+							<img src="./img/饥人谷logo基础1.png" alt="...">
+						</a>
 					</footer>
 				</div>
+				
 			</div>
 			<a class="button" href="#">下载 PDF 简历</a>
 			<p>
